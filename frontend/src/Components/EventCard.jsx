@@ -11,7 +11,7 @@ const EventCard = ({ event }) => {
       if (optIn) {
         try {
           const response = await axios.post(
-            "http://localhost:5000/api/events/saveEmail", // Your backend API URL
+            `${import.meta.env.VITE_BASE_URL}/api/events/saveEmail`, // Your backend API URL
             { email }
           );
 
