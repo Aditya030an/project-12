@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://adityaanu20023:Aditya123@cluster0.fu6v1.mongodb.net/");
+mongoose.connect("mongodb+srv://adityaanu20023:Aditya123@cluster0.fu6v1.mongodb.net");
 
 app.use("/api/events", eventRoutes);
 app.use("/api/events", emailRoutes);

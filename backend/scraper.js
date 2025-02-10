@@ -5,7 +5,7 @@ const schedule = require("node-cron");
 
 // MongoDB Connection (REPLACE WITH YOUR ACTUAL CONNECTION STRING)
 mongoose
-  .connect("mongodb+srv://adityaanu20023:Aditya123@cluster0.fu6v1.mongodb.net/")
+  .connect("mongodb+srv://adityaanu20023:Aditya123@cluster0.fu6v1.mongodb.net")
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
