@@ -16,6 +16,10 @@ app.use("/api/events", emailRoutes);
 
 scrapeEvents();
 
+app.get("/" , (req , res)=>{
+  res.send("Api is working");
+})
+
 app.listen(5000, () => {
   console.log("Server running on http://localhost:5000");
   // scrapeEvents(); // Run scraper when server starts
